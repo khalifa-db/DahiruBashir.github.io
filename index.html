@@ -1,139 +1,464 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>DAHIRU BASHIR DATA ANALYTICS PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dahiru M. Bashir, Data Analyst & Banking Operations</title>
+<meta name="description" content="Portfolio of Dahiru M. Bashir, Contact Center Supervisor and data analyst bridging banking operations and analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F4EA;
+    --paper-stripe:#E7EFE2;
+    --ink:#1F2B22;
+    --ink-soft:#52604F;
+    --ink-faint:#85907E;
+    --brass:#9C6F2B;
+    --brass-dark:#714F1C;
+    --seal:#8B3A2B;
+    --rule:#CFC8B0;
+    --rule-soft:#DEDACB;
+    --backdrop:#10180F;
+    --backdrop-card:#16201A;
+    --radius:2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--backdrop);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brass); outline-offset:2px;}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  .sheet{
+    max-width:880px;
+    margin:0 auto;
+    background:var(--paper);
+    box-shadow:0 40px 80px rgba(0,0,0,0.45);
+    position:relative;
+    border-left:1px solid var(--rule);
+    border-right:1px solid var(--rule);
+  }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>DAHIRU BASHIR PORTFOLIO<br /></h1>
-						<p>I explore data, solve business problems, and build practical digital experiences. 
-							<p>Welcome to my little corner of the web <a href="www.linkedin.com/in/dahiru-bashir
-">@dahirubashir.</a>
-						
-					</div>
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Dahiru Bashir</a>
-					</header>
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px 32px;
+    border-bottom:1px solid var(--rule);
+    background:var(--paper);
+    position:sticky; top:0; z-index:20;
+  }
+  .wordmark{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px; letter-spacing:0.12em; font-weight:500;
+    color:var(--ink);
+  }
+  .wordmark span{color:var(--brass);}
+  .navlinks{display:flex; gap:22px; align-items:center;}
+  .navlinks a{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase;
+    text-decoration:none; color:var(--ink-soft);
+    padding-bottom:2px; border-bottom:1px solid transparent;
+    transition:border-color 0.2s, color 0.2s;
+  }
+  .navlinks a:hover{color:var(--ink); border-color:var(--brass);}
+  .navlinks .icon-link{display:flex; align-items:center; gap:5px;}
+  @media(max-width:640px){
+    .navlinks{display:none;}
+  }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/dahiru-bashir/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/khalifa-db" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  section{padding:56px 32px; position:relative;}
+  .rule-thick{border-top:2px solid var(--ink); margin:0 32px;}
+  .rule-thin{border-top:1px solid var(--rule); margin:0 32px;}
 
-				<!-- Main -->
-					<div id="main">
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:11px;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--brass-dark);
+    margin:0 0 10px;
+  }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/khalifa-db/Data-Visualization-TATA-Forage">DATA VISUALIZATION PROJECT<br />
-									</a></h2>
-									<p>Developed clear, executive-ready data visualizations and prepared strategic questions for senior leadership, supporting informed, high level decision-making.</p>
-								</header>
-								<a href="https://github.com/khalifa-db/Data-Visualization-TATA-Forage" class="image main"><img src="images/Tata-Logo-1988.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/khalifa-db/Data-Visualization-TATA-Forage" class="button large">VIEW PROJECT</a></li>
-								</ul>
-							</article>
+  /* HERO */
+  .hero{padding-top:48px;}
+  .hero h1{
+    font-family:'Fraunces',serif; font-weight:500; font-size:clamp(34px,5.4vw,54px);
+    line-height:1.04; margin:0 0 14px; color:var(--ink);
+    letter-spacing:-0.01em;
+  }
+  .hero h1 em{font-style:italic; font-weight:300; color:var(--brass-dark);}
+  .hero-role{
+    font-family:'IBM Plex Mono',monospace; font-size:13.5px; color:var(--ink-soft);
+    margin:0 0 22px; letter-spacing:0.02em;
+  }
+  .hero-summary{
+    max-width:560px; font-size:16px; line-height:1.7; color:var(--ink-soft);
+    margin:0 0 40px;
+  }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/khalifa-db/NUPRC-Exploratory-Data-Analysis-on-SQL">Exploratory Data Analysis In SQL.<br />
-									</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/biggest_oil_and_gas_companies.jpg" alt="" /></a>
-									<p>Exploratory Data Analysis of Nigeria’s Gas Production & Flaring (NUPRC Data)
+  .ledger-stats{
+    border-top:1px solid var(--ink); border-bottom:1px solid var(--ink);
+  }
+  .stat-row{
+    display:flex; align-items:baseline; justify-content:space-between;
+    padding:13px 0; border-bottom:1px solid var(--rule);
+    gap:16px;
+  }
+  .stat-row:last-child{border-bottom:none;}
+  .stat-label{
+    font-size:14px; color:var(--ink-soft);
+    display:flex; align-items:baseline; gap:6px; flex:1; min-width:0;
+  }
+  .stat-leader{
+    flex:1; border-bottom:1px dotted var(--rule); height:1px; min-width:20px;
+    transform:translateY(-4px);
+  }
+  .stat-value{
+    font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:15px;
+    color:var(--ink); white-space:nowrap;
+  }
 
-This project presents an SQL-based exploratory data analysis (EDA) of monthly gas production data published by the Nigerian Upstream Petroleum Regulatory Commission (NUPRC).
+  /* SECTION HEADS */
+  .sec-head{
+    display:flex; align-items:baseline; justify-content:space-between;
+    margin-bottom:30px; flex-wrap:wrap; gap:8px;
+  }
+  .sec-head h2{
+    font-family:'Fraunces',serif; font-weight:500; font-size:28px; margin:0;
+    color:var(--ink);
+  }
+  .sec-head .folio{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint);
+    letter-spacing:0.08em;
+  }
 
-The analysis focuses on understanding gas utilisation efficiency, gas flaring trends, environmental impact, and economic value loss within Nigeria’s oil and gas sector.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/khalifa-db/NUPRC-Exploratory-Data-Analysis-on-SQL" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
+  /* PROFILE */
+  .profile-note{
+    border:1px solid var(--rule); padding:24px 26px; background:rgba(255,255,255,0.35);
+    font-size:15.5px; line-height:1.75; color:var(--ink-soft); max-width:720px;
+  }
+  .profile-note .signoff{
+    margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:11px;
+    color:var(--ink-faint); letter-spacing:0.06em;
+  }
 
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								
+  /* EXPERIENCE / EDU entries */
+  .entry{
+    display:grid; grid-template-columns:96px 1fr; gap:24px;
+    padding:24px 0; border-bottom:1px solid var(--rule);
+    opacity:0; transform:translateY(14px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .entry.revealed{opacity:1; transform:translateY(0);}
+  .entry:last-child{border-bottom:none;}
+  .entry-ref{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--brass-dark);
+    line-height:1.6;
+  }
+  .entry-ref .date{display:block; color:var(--ink-faint); margin-top:4px;}
+  .entry-title{
+    font-family:'Fraunces',serif; font-weight:500; font-size:19px; margin:0 0 2px;
+    color:var(--ink);
+  }
+  .entry-org{
+    font-size:13.5px; color:var(--ink-soft); margin:0 0 12px;
+  }
+  .entry ul{margin:0; padding-left:18px; color:var(--ink-soft); font-size:14.5px; line-height:1.7;}
+  .entry li{margin-bottom:4px;}
+  @media(max-width:560px){
+    .entry{grid-template-columns:1fr;}
+    .entry-ref{display:flex; gap:10px;}
+    .entry-ref .date{margin-top:0;}
+  }
 
-						
+  /* PROJECTS */
+  .proj-grid{display:flex; flex-direction:column; gap:0;}
+  .proj{
+    display:grid; grid-template-columns:1fr auto; align-items:center; gap:20px;
+    padding:26px 0; border-bottom:1px solid var(--rule);
+    opacity:0; transform:translateY(14px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .proj.revealed{opacity:1; transform:translateY(0);}
+  .proj:last-child{border-bottom:none;}
+  .proj-ref{
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--ink-faint);
+    letter-spacing:0.08em; margin-bottom:6px; display:block;
+  }
+  .proj h3{
+    font-family:'Fraunces',serif; font-weight:500; font-size:19px; margin:0 0 8px;
+    color:var(--ink);
+  }
+  .proj p{font-size:14.5px; line-height:1.65; color:var(--ink-soft); margin:0; max-width:480px;}
 
+  .stamp{
+    width:104px; height:104px; border-radius:50%;
+    border:2px solid var(--seal); color:var(--seal);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    font-family:'IBM Plex Mono',monospace; font-size:10px; font-weight:500;
+    letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;
+    transform:rotate(-7deg) scale(0.92);
+    transition:transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+    flex-shrink:0; position:relative; line-height:1.3;
+  }
+  .stamp::before{
+    content:""; position:absolute; inset:6px; border:1px dashed var(--seal); border-radius:50%;
+    opacity:0.55;
+  }
+  .stamp:hover{transform:rotate(-7deg) scale(1.04); background:var(--seal); color:var(--paper);}
+  .stamp:hover::before{border-color:var(--paper);}
+  @media(max-width:560px){
+    .proj{grid-template-columns:1fr; gap:14px;}
+    .stamp{width:84px; height:84px; font-size:9px;}
+  }
 
+  /* SKILLS */
+  .skill-tags{display:flex; flex-wrap:wrap; gap:10px;}
+  .skill-tag{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 12px;
+    border:1px solid var(--ink); color:var(--ink); letter-spacing:0.02em;
+    background:rgba(255,255,255,0.3);
+  }
 
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>Abuja, FCT, Nigeria.</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:bashirdahiru2000@gmail.com">bashirdahiru2000@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-							
-									<li><a href="https://www.linkedin.com/in/dahiru-bashir/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/khalifa-db" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+  /* EDU */
+  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:0 32px;}
+  @media(max-width:640px){.edu-grid{grid-template-columns:1fr;}}
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+  /* FOOTER */
+  footer{
+    padding:48px 32px 40px; background:var(--ink); color:var(--paper);
+  }
+  .footer-top{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:28px;
+    padding-bottom:28px; border-bottom:1px solid rgba(247,244,234,0.2);
+    margin-bottom:22px;
+  }
+  footer h2{
+    font-family:'Fraunces',serif; font-weight:500; font-size:24px; margin:0 0 10px;
+    color:var(--paper);
+  }
+  footer p{font-size:14px; color:rgba(247,244,234,0.65); margin:0; max-width:340px; line-height:1.6;}
+  .contact-list{
+    font-family:'IBM Plex Mono',monospace; font-size:13px; display:flex; flex-direction:column; gap:9px;
+  }
+  .contact-list a{text-decoration:none; color:var(--paper); border-bottom:1px solid transparent;}
+  .contact-list a:hover{border-color:var(--brass);}
+  .contact-list .lbl{color:rgba(247,244,234,0.45); margin-right:8px;}
+  .footer-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(247,244,234,0.4);
+    letter-spacing:0.04em;
+  }
+</style>
+</head>
+<body>
 
-			</div>
+<div class="sheet">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <div class="topbar">
+    <div class="wordmark">D<span>.</span>BASHIR <span>/</span> RECORD</div>
+    <nav class="navlinks">
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="icon-link" href="https://www.linkedin.com/in/dahiru-bashir/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="icon-link" href="https://github.com/khalifa-db" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
 
-	</body>
+  <section class="hero">
+    <p class="eyebrow">Account holder</p>
+    <h1>Dahiru M. <em>Bashir</em></h1>
+    <p class="hero-role">Contact Center Supervisor, Summit Bank Limited. Banking operations, customer experience, and data analysis</p>
+    <p class="hero-summary">I keep operations accurate and customers resolved on the front line, then turn the same discipline toward data: querying it, cleaning it, and reporting it so it's useful to the people making decisions.</p>
+
+    <div class="ledger-stats">
+      <div class="stat-row">
+        <span class="stat-label">SLA compliance maintained at Summit Bank<span class="stat-leader"></span></span>
+        <span class="stat-value">95%+</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Service requests processed weekly<span class="stat-leader"></span></span>
+        <span class="stat-value">50+</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Adherence to CBN and internal protocol<span class="stat-leader"></span></span>
+        <span class="stat-value">100%</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Intern satisfaction lift at NHCN, via mentorship<span class="stat-leader"></span></span>
+        <span class="stat-value">+20%</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule-thick"></div>
+
+  <section id="profile">
+    <div class="sec-head">
+      <h2>Profile</h2>
+      <span class="folio">FOL. 01</span>
+    </div>
+    <div class="profile-note">
+      <p>Detail-oriented professional with hands-on experience across data handling, administration, and customer experience, currently supervising contact center operations in the banking sector. Comfortable reviewing, organising, and validating data at high accuracy, with practical exposure to SQL, Power BI, and analytics simulations alongside day-to-day banking operations. Looking to grow further into data analytics, bringing a working knowledge of how banks actually use data on the ground.</p>
+    </div>
+  </section>
+
+  <div class="rule-thin"></div>
+
+  <section id="experience">
+    <div class="sec-head">
+      <h2>Experience</h2>
+      <span class="folio">FOL. 02</span>
+    </div>
+
+    <div class="entry">
+      <div class="entry-ref">May 2025 to present</div>
+      <div>
+        <h3 class="entry-title">Contact Center Supervisor</h3>
+        <p class="entry-org">Summit Bank Limited · Abuja FCT, Nigeria</p>
+        <ul>
+          <li>Supervise daily contact center operations, ensuring smooth service delivery and consistent quality.</li>
+          <li>Coach frontline staff toward first contact resolution.</li>
+          <li>Prepare and analyse call center reports to improve processes and allocate team resources.</li>
+          <li>Maintain 95%+ SLA compliance, resolving customer complaints within agreed turnaround times.</li>
+          <li>Process 50+ service requests weekly with full adherence to internal protocol and CBN guidelines.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-ref">January 2023 to December 2023</div>
+      <div>
+        <h3 class="entry-title">Administrative Assistant</h3>
+        <p class="entry-org">National Hajj Commission of Nigeria · Abuja FCT, Nigeria</p>
+        <ul>
+          <li>Improved intern satisfaction scores by 20% through structured mentorship and admin support.</li>
+          <li>Supported 30+ interns monthly with documentation and issue resolution, cutting processing time by 25%.</li>
+          <li>Coordinated management meetings and recorded minutes, achieving a 90% feedback rate from leadership.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule-thin"></div>
+
+  <section id="projects">
+    <div class="sec-head">
+      <h2>Projects</h2>
+      <span class="folio">FOL. 03</span>
+    </div>
+
+    <div class="proj-grid">
+      <div class="proj">
+        <div>
+          <span class="proj-ref">REF #PRJ-2026-01 · SQL · EXPLORATORY ANALYSIS</span>
+          <h3>NUPRC exploratory data analysis</h3>
+          <p>SQL-based analysis of Nigeria's monthly gas production and flaring data, examining utilisation efficiency, flaring trends, and economic value loss across the upstream petroleum sector. Built queries to extract, clean, transform, and validate the dataset before producing decision-ready insights.</p>
+        </div>
+        <a class="stamp" href="https://github.com/khalifa-db/NUPRC-Exploratory-Data-Analysis-on-SQL" target="_blank" rel="noopener">View<br>project ↗</a>
+      </div>
+
+      <div class="proj">
+        <div>
+          <span class="proj-ref">REF #PRJ-2025-02 · POWER BI · FORAGE SIMULATION</span>
+          <h3>Data visualization job simulation</h3>
+          <p>Built executive-ready visualizations and framed strategic questions for senior leadership as part of a data analytics job simulation, focused on translating raw figures into decisions a non-technical audience could act on.</p>
+        </div>
+        <a class="stamp" href="https://github.com/khalifa-db/Data-Visualization-TATA-Forage" target="_blank" rel="noopener">View<br>project ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule-thin"></div>
+
+  <section id="skills">
+    <div class="sec-head">
+      <h2>Skills</h2>
+      <span class="folio">FOL. 04</span>
+    </div>
+    <div class="skill-tags">
+      <span class="skill-tag">Contact centre operations</span>
+      <span class="skill-tag">Customer experience (CX)</span>
+      <span class="skill-tag">Transaction monitoring</span>
+      <span class="skill-tag">Dispute & escalation handling</span>
+      <span class="skill-tag">Digital banking ops</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Power BI</span>
+      <span class="skill-tag">Data labeling & annotation</span>
+      <span class="skill-tag">Data validation</span>
+    </div>
+  </section>
+
+  <div class="rule-thin"></div>
+
+  <section id="education">
+    <div class="sec-head">
+      <h2>Education & certification</h2>
+      <span class="folio">FOL. 05</span>
+    </div>
+    <div class="edu-grid">
+      <div class="entry" style="border-bottom:none; padding-top:0;">
+        <div class="entry-ref">Graduated January 2023</div>
+        <div>
+          <h3 class="entry-title" style="font-size:17px;">B.Sc, Management Technology</h3>
+          <p class="entry-org">Modibbo Adama University of Technology, Yola</p>
+        </div>
+      </div>
+      <div class="entry" style="border-bottom:none; padding-top:0;">
+        <div class="entry-ref">2024</div>
+        <div>
+          <h3 class="entry-title" style="font-size:17px;">Professional Diploma, Project Management</h3>
+          <p class="entry-org">MTF Institute of Management, Technology & Finance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div>
+        <h2>Close of statement</h2>
+        <p>Open to roles bridging banking operations and data analytics. Reach out below, I respond promptly during business hours.</p>
+      </div>
+      <div class="contact-list">
+        <span><span class="lbl">Phone</span><a href="tel:+2347066969639">0706 696 9639</a></span>
+        <span><span class="lbl">Email</span><a href="mailto:bashirdahiru2000@gmail.com">bashirdahiru2000@gmail.com</a></span>
+        <span><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/dahiru-bashir/" target="_blank" rel="noopener">/in/dahiru-bashir</a></span>
+        <span><span class="lbl">GitHub</span><a href="https://github.com/khalifa-db" target="_blank" rel="noopener">/khalifa-db</a></span>
+        <span><span class="lbl">Location</span>Abuja, FCT, Nigeria</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>RECORD MAINTAINED BY D. BASHIR</span>
+      <span>LAST UPDATED 2026</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.entry, .proj');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if(e.isIntersecting){
+        e.target.classList.add('revealed');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach((el) => io.observe(el));
+</script>
+
+</body>
 </html>
